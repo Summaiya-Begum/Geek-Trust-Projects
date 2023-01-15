@@ -1,0 +1,133 @@
+.search_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    padding: 1rem 0rem;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:10px ;
+
+}
+
+.search_box>input {
+    width: 350px;
+    padding: 0.5rem 0.5rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(103, 101, 101);
+}
+
+.input_span {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    background-color: rgb(171, 175, 175);
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+}
+
+.product_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product_box {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 1rem;
+}
+.product_content{
+    padding: 0.2rem 0rem;
+    margin-top: 2px;
+    text-align: start;
+}
+.product_content > p{
+    border-bottom: 1px solid rgb(106, 104, 104);
+    font-weight: 500;
+    
+}
+.product_span{
+    margin: auto;
+    font-family:serif;
+    
+}
+
+.cart_button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+.cart_button > p{
+    font-weight: bold;
+    font-size:18px;
+	border-radius:11px;
+    padding: 0.5rem;
+    margin-top: 10px;
+    font-family: cursive;
+}
+.cart_button  >button{
+    box-shadow:inset 0px 1px 0px 0px #e9c1fc;
+	background:linear-gradient(to bottom, #cb77ff 5%, #2585fb 100%);
+	background-color:#d477ff;
+	border-radius:11px;
+	border:2px solid #9e4fee;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:2px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ba52cc;
+}
+.cart_button >button:hover{
+    background:linear-gradient(to bottom, #259efb 5%, #77b4ff 100%);
+	background-color:#258cfb;
+}
+
+
+@media all and (min-width:500px) and (max-width:850px) {
+    .product_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .search_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1px solid red;
+        overflow: hidden;
+        width: 90%;
+        margin: 10px 10px;
+        align-items: center;
+        padding: 1rem 0rem;
+
+    }
+    .search_box>input {
+        width: 300px;
+    }
+}
+
+@media all and (min-width:100px) and (max-width:500px) {
+    .product_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .search_box {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid red;
+        width: 100%;
+    }
+    .search_box>input {
+        width:100%;
+    }
+}
