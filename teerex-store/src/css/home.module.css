@@ -2,7 +2,6 @@
     display: grid;
     gap: 2px;
     padding: 2px;
-    /* border: 1px solid red; */
 }
 
 .grid_item {
@@ -34,6 +33,22 @@
 @media all and (min-width:100px) and (max-width:450px){
     .grid_item1 {
         display: none;
+      
+        
     }
+    .visible{
+        position:absolute;
+        background:white;
+        right: 0;
+        top: 18%;
+    }
+    .cross{
+        position: relative;
+        font-weight: bold;
+    }
+    .grid_container {
+        display: block;
+    }
+    
     
 }

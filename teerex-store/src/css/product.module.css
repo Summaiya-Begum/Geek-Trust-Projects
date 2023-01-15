@@ -55,6 +55,15 @@
     font-family:serif;
     
 }
+.filter_span{
+    position: relative;
+    top: 2px;
+    right: -10px;
+    background-color: rgb(171, 175, 175);
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    display: none;
+}
 
 .cart_button {
     display: flex;
@@ -101,7 +110,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         overflow: hidden;
         width: 90%;
         margin: 10px 10px;
@@ -119,15 +128,26 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+        padding: 1rem;
     }
 
     .search_box {
         display: flex;
         flex-direction: row;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 100%;
     }
     .search_box>input {
         width:100%;
     }
+    .filter_span{
+        position: relative;
+        top: 2px;
+        right: -10px;
+        background-color: rgb(171, 175, 175);
+        padding: 0.3rem 1rem;
+        border-radius: 10px;
+        display: block;
+    }
+    
 }

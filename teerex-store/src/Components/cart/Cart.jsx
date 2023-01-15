@@ -47,7 +47,10 @@ function Cart() {
           <div className={style.cart_main_Box}>
             {
 
-              state.product?.map((el, i) => idss.includes(el.id) && <div className={style.cart_container}>
+              state.product?.map((el, i) => idss.includes(el.id) && <div 
+              key={i}
+              className={style.cart_container}
+              >
                 <div>
                   <img src={el.imageURL} alt={el.name} />
                 </div>
@@ -65,7 +68,7 @@ function Cart() {
                   <select onChange={(e) => handleQuantity(e, el.id)} >
                     <option value="">Qty</option>
                     {
-                      new Array(el.quantity).fill(1).map((e, i) => <option value={i + 1}>{i + 1}</option>)
+                      new Array(el.quantity).fill(1).map((e, i) => <option key={i} value={i + 1}>{i + 1}</option>)
                     }
                   </select>
                 </div>

@@ -70,6 +70,7 @@ function ProductFunctionality() {
   // All features (search, filter, add to cart etc) should be handled on the client side. 
   return (
     <div className={style.filter_box}>
+      
 
       <div className={style.input_checkbox_box}>
         <p>Colour</p>
